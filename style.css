@@ -1,54 +1,68 @@
 body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     margin: 0;
-    padding: 0;
-}
-
-h2 {
-    text-align: center;
-}
-
-form {
+    background: #f5f5f5;
+    font-family: sans-serif;
+  }
+  
+  .container {
     width: 300px;
-    margin: 0 auto;
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-input {
+    height: 400px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.2);
+  }
+  
+  .slide {
+    width: 200%;
+    height: 100%;
+    display: flex;
+    transition: transform 0.4s ease;
+  }
+  
+  .panel {
+    width: 50%;
+    padding: 30px;
+    box-sizing: border-box;
+  }
+  
+  .login {
+    background: #ef2b2d;
+    color: white;
+  }
+  
+  .register {
+    background: white;
+    color: black;
+  }
+  
+  input {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
-    border: 1px solid #ddd;
+    border: none;
     border-radius: 5px;
-}
-
-button {
-    padding: 10px;
+  }
+  
+  button {
     width: 100%;
-    background-color: #50b3a2;
+    padding: 10px;
+    background: black;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-}
-
-button:hover {
-    background-color: #429a87;
-}
-
-p {
+    margin-top: 10px;
+  }
+  
+  .toggle {
     text-align: center;
-}
-
-a {
-    color: #50b3a2;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
+    margin-top: 20px;
+    cursor: pointer;
+    color: #0077cc;
+  }
+  

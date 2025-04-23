@@ -1,29 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>Login / Register</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h2>Login</h2>
-    <form id="loginForm" onsubmit="event.preventDefault(); login();">
-        <input type="text" id="loginUser" placeholder="Username" required><br><br>
-        <input type="password" id="loginPass" placeholder="Password" required><br><br>
-        <button type="submit">Login</button>
-    </form>
-
-    <p>Don't have an account? <a href="#" onclick="toggleSlide()">Register here</a></p>
-
-    <h2>Register</h2>
-    <form id="registerForm" onsubmit="event.preventDefault(); register();">
-        <input type="text" id="regUser" placeholder="Username" required><br><br>
-        <input type="password" id="regPass" placeholder="Password" required><br><br>
-        <button type="submit">Register</button>
-    </form>
-
-    <script src="js_server.js"></script>
+  <div class="container">
+    <div class="slide" id="slider">
+      <div class="panel login">
+        <h2>Log In</h2>
+        <input type="text" id="loginUser" placeholder="Username">
+        <input type="password" id="loginPass" placeholder="Password">
+        <button onclick="login()">Login</button>
+        <div class="toggle" onclick="toggleSlide()">No account? Create one</div>
+      </div>
+      <div class="panel register">
+        <h2>Create Account</h2>
+        <input type="text" id="regUser" placeholder="Username">
+        <input type="password" id="regPass" placeholder="Password">
+        <button onclick="register()">Register</button>
+        <div class="toggle" onclick="toggleSlide()">Have an account? Log in</div>
+      </div>
+    </div>
+  </div>
+  <script src="js_server.js"></script>
 </body>
 </html>
-
