@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Sharing Platform</title>
+    <link rel="stylesheet" href="main_style.css">
+</head>
+<body>
+
+    <h2>Welcome, <span id="loggedUser"></span></h2>
+    <button onclick="logout()">Logout</button>
+    <div id="theme-controls">
+      <h3>🎨 Customize Background</h3>
+      <input type="color" id="bgColorPicker" value="#fffafc">
+      <input type="file" id="bgImagePicker" accept="image/*">
+      <button onclick="applyTheme()">Apply</button>
+      <button onclick="resetTheme()">Reset</button>
+    </div>
+    
+
+
+    <h3>Upload New Photo</h3>
+    <input type="file" id="photoInput">
+    <input type="text" id="photoDescription" placeholder="Enter photo description">
+    <button onclick="uploadPhoto()">Upload Photo</button>
+
+    <h3>Your Photos</h3>
+    <div id="photo-container"></div>
+    
+
+    <script src="js-functions.js"></script>
+</body>
+</html>
+

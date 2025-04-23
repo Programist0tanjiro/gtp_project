@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h2>Login</h2>
+    <form id="loginForm" onsubmit="event.preventDefault(); login();">
+        <input type="text" id="loginUser" placeholder="Username" required><br><br>
+        <input type="password" id="loginPass" placeholder="Password" required><br><br>
+        <button type="submit">Login</button>
+    </form>
+
+    <p>Don't have an account? <a href="#" onclick="toggleSlide()">Register here</a></p>
+
+    <h2>Register</h2>
+    <form id="registerForm" onsubmit="event.preventDefault(); register();">
+        <input type="text" id="regUser" placeholder="Username" required><br><br>
+        <input type="password" id="regPass" placeholder="Password" required><br><br>
+        <button type="submit">Register</button>
+    </form>
+
+    <script src="js_server.js"></script>
+</body>
+</html>
+
